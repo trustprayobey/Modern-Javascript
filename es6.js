@@ -63,12 +63,20 @@
 // jobs.filter(job => job.isActive)
 
 
-const person = {
-    talk() {
-        var self = this
-        setTimeout(() => { //this is stand alone function and will return window object
-            console.log('this', this)//to get person var self
-        }, 1000) //arrow function dont rebind the this keyword instead it inherits 
-    }
-}
-person.talk()
+// const person = {
+//     talk() {
+//         var self = this
+//         setTimeout(() => { //this is stand alone function and will return window object
+//             console.log('this', this)//to get person var self
+//         }, 1000) //arrow function dont rebind the this keyword instead it inherits
+//     }
+// }
+// person.talk()
+
+
+//es6 template literals
+const colors = ['red', 'green', 'blue']
+// colors.map(color => '<li>' + color + '</li>')
+const items = colors.map(color => `<li>${color}</li>`)
+console.log(items)
+
