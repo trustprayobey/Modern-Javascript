@@ -50,5 +50,14 @@
 //     return number * number
 // }
 
-const square = number => number * number //same thing
-console.log(square(5))
+// const square = number => number * number //same thing
+// console.log(square(5))
+
+const jobs = [
+    { id: 1, isActive: true },
+    { id: 2, isActive: true },
+    { id: 3, isActive: false }
+
+]
+
+jobs.filter(job => job.isActive)
