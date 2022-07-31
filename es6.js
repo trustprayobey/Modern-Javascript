@@ -81,20 +81,38 @@
 // console.log(items)
 
 
-//Object Destructuring 
+//Object Destructuring
 
-const address = {
-    street: '',
-    city: '',
-    country: ''
+// const address = {
+//     street: '',
+//     city: '',
+//     country: ''
 
-}
+// }
 
 // const street = address.street
-// const city = address.city   ///destructuring solves this 
+// const city = address.city   ///destructuring solves this
 // const country = address.country
 
-const { street, city, country } = address
+// const { street, city, country } = address
 //if we want diferent name eg st
-const { street: st } = address
+// const { street: st } = address
 
+
+
+//Spread operator
+
+// const first = [1, 2, 3]
+// const second = [4, 5, 6]
+
+// const combined = first.concat(second) //old way
+// const combined = [...first, 'a', ...second, 'b'] // spread ...
+
+// const clone = [...first]
+// console.log(clone)
+
+const first = { name: 'Mosh' }
+const second = { job: 'Instructor' }
+
+const combined = { ...first, ...second, location: 'Australia' }
+console.log(combined)
