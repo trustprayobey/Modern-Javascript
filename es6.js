@@ -27,11 +27,11 @@
 
 //this keyword
 
-const person = {
-    name: "Mosh",
-    walk() { console.log(this) }
-}
-person.walk() //this returns reference to the object
+// const person = {
+//     name: "Mosh",
+//     walk() { console.log(this) }
+// }
+// person.walk() //this returns reference to the object
 
 
 // const walk = person.walk
@@ -40,7 +40,15 @@ person.walk() //this returns reference to the object
 
 //when use this outside of the object it returns a global object which is the window
 
-const walk = person.walk.bind(person) //sets this to person
-walk()
+// const walk = person.walk.bind(person) //sets this to person
+// walk()
 
 //functions are objects that have propreties and methods we can use
+
+//Arrow functions
+// const square = function (number) {
+//     return number * number
+// }
+
+const square = number => number * number //same thing
+console.log(square(5))
