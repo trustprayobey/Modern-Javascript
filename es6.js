@@ -34,7 +34,13 @@ const person = {
 person.walk() //this returns reference to the object
 
 
-const walk = person.walk
-console.log(walk)
-// we can not call walk
+// const walk = person.walk
+// console.log(walk)
+// walk()
+
 //when use this outside of the object it returns a global object which is the window
+
+const walk = person.walk.bind(person) //sets this to person
+walk()
+
+//functions are objects that have propreties and methods we can use
