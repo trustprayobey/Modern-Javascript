@@ -11,3 +11,5 @@ export function printName(user) {
 export function printAge(user) {
     console.log(`This user is ${user.age}`)
 }
+
+//This website has notes on es6
