@@ -75,8 +75,26 @@
 
 
 //es6 template literals
-const colors = ['red', 'green', 'blue']
+// const colors = ['red', 'green', 'blue']
 // colors.map(color => '<li>' + color + '</li>')
-const items = colors.map(color => `<li>${color}</li>`)
-console.log(items)
+// const items = colors.map(color => `<li>${color}</li>`)
+// console.log(items)
+
+
+//Object Destructuring 
+
+const address = {
+    street: '',
+    city: '',
+    country: ''
+
+}
+
+// const street = address.street
+// const city = address.city   ///destructuring solves this 
+// const country = address.country
+
+const { street, city, country } = address
+//if we want diferent name eg st
+const { street: st } = address
 
