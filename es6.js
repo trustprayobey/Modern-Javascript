@@ -111,8 +111,24 @@
 // const clone = [...first]
 // console.log(clone)
 
-const first = { name: 'Mosh' }
-const second = { job: 'Instructor' }
+// const first = { name: 'Mosh' }
+// const second = { job: 'Instructor' }
 
-const combined = { ...first, ...second, location: 'Australia' }
-console.log(combined)
+// const combined = { ...first, ...second, location: 'Australia' }
+// console.log(combined)
+
+
+
+//Classes
+
+class Person {
+    constructor(name) {
+        this.name = name
+    }
+    walk() {
+        console.log("walk")
+    }
+} //use pascal naming convention
+
+const person = new Person('Brian')
+person.name
