@@ -53,11 +53,22 @@
 // const square = number => number * number //same thing
 // console.log(square(5))
 
-const jobs = [
-    { id: 1, isActive: true },
-    { id: 2, isActive: true },
-    { id: 3, isActive: false }
+// const jobs = [
+//     { id: 1, isActive: true },
+//     { id: 2, isActive: true },
+//     { id: 3, isActive: false }
 
-]
+// ]
 
-jobs.filter(job => job.isActive)
+// jobs.filter(job => job.isActive)
+
+
+const person = {
+    talk() {
+        var self = this
+        setTimeout(() => { //this is stand alone function and will return window object
+            console.log('this', this)//to get person var self
+        }, 1000) //arrow function dont rebind the this keyword instead it inherits 
+    }
+}
+person.talk()
