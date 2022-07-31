@@ -140,24 +140,29 @@
 
 
 
-class Person {
-    constructor(name) {
-        this.name = name
-    }
-    walk() {
-        console.log("walk")
-    }
-}
+// class Person {
+//     constructor(name) {
+//         this.name = name
+//     }
+//     walk() {
+//         console.log("walk")
+//     }
+// }
 
-class Teacher extends Person {
-    constructor(name, degree) {
-        super(name)
-        this.degree = degree
-    }
-    teach() {
-        console.log("teach")
-    }
-}
+// class Teacher extends Person {
+//     constructor(name, degree) {
+//         super(name)
+//         this.degree = degree
+//     }
+//     teach() {
+//         console.log("teach")
+//     }
+// }
 
-const teacher = new Teacher('Brian', 'masters')
-teacher.teach //Inheritance here in action
+// const teacher = new Teacher('Brian', 'masters')
+// teacher.teach //Inheritance here in action
+
+
+//Modules
+//modularity is writting the code in diferrent files
+//each file is called a module

@@ -1,3 +1,8 @@
+//Modules
+//modularity is writting the code in diferrent files
+//each file is called a modules
+
+
 import UserName, { printName as printUserName, printAge } from "./user.js";
 
 const user = new UserName('Bob', 11)
