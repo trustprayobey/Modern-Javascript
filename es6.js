@@ -160,4 +160,4 @@ class Teacher extends Person {
 }
 
 const teacher = new Teacher('Brian', 'masters')
-teacher.teach // now we have all them here
+teacher.teach //Inheritance here in action
