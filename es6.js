@@ -121,6 +121,25 @@
 
 //Classes
 
+// class Person {
+//     constructor(name) {
+//         this.name = name
+//     }
+//     walk() {
+//         console.log("walk")
+//     }
+// } //use pascal naming convention
+
+// const person = new Person('Brian')
+// person.name
+
+
+
+
+//Inheritance
+
+
+
 class Person {
     constructor(name) {
         this.name = name
@@ -128,7 +147,17 @@ class Person {
     walk() {
         console.log("walk")
     }
-} //use pascal naming convention
+}
 
-const person = new Person('Brian')
-person.name
+class Teacher extends Person {
+    constructor(name, degree) {
+        super(name)
+        this.degree = degree
+    }
+    teach() {
+        console.log("teach")
+    }
+}
+
+const teacher = new Teacher('Brian', 'masters')
+teacher.teach // now we have all them here
