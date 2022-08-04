@@ -4,25 +4,29 @@
 //var -> function
 //let -> block
 // function sayHello() {
-//     for (var i = 0; i < 5; i++) {
+//     for (let i = 0; i < 5; i++) {
 //         console.log(i) //Es6 'let' is only accessible in the block
 //     }
-//     console.log(i) //var is accessible here and in the block
+//     // console.log(i) //var is accessible here and in the block
 // }
 // sayHello() //use c'onst' over 'let' and 'let' only when reasinging throw away var
 
 
-//objects
-// const person = {
-//     name: 'Brian',
-//     walk: function () { },
-//     talk() { } //same method es6 way
+// var agee = 20
+
+// let person = {
+//     'last-name': 20,
+//     //     agee,
+//     // name: 'Brian',
+//     // walk: function () { },
+//     // talk() { } //same method es6 way
 // }
-// person.walk()
+// console.log(person["last-name"])
 // person['name'] //same but es6
 
 // const targetMember = 'name'
 // person[targetMember] = 'Ian'
+// console.log(person.agee)
 
 
 //this keyword
@@ -30,6 +34,7 @@
 // const person = {
 //     name: "Mosh",
 //     walk() { console.log(this) }
+//     // this keyword object,functions declaration side
 // }
 // person.walk() //this returns reference to the object
 
@@ -38,7 +43,7 @@
 // console.log(walk)
 // walk()
 
-//when use this outside of the object it returns a global object which is the window
+// when use this outside of the object it returns a global object which is the window
 
 // const walk = person.walk.bind(person) //sets this to person
 // walk()
@@ -66,6 +71,7 @@
 // const person = {
 //     talk() {
 //         var self = this
+//         // asynchro us javascript
 //         setTimeout(() => { //this is stand alone function and will return window object
 //             console.log('this', this)//to get person var self
 //         }, 1000) //arrow function dont rebind the this keyword instead it inherits
@@ -95,7 +101,7 @@
 // const country = address.country
 
 // const { street, city, country } = address
-//if we want diferent name eg st
+// if we want diferent name eg st
 // const { street: st } = address
 
 
@@ -131,7 +137,9 @@
 // } //use pascal naming convention
 
 // const person = new Person('Brian')
-// person.name
+
+
+// person.walk()
 
 
 
@@ -160,9 +168,31 @@
 // }
 
 // const teacher = new Teacher('Brian', 'masters')
-// teacher.teach //Inheritance here in action
+// teacher.walk() //Inheritance here in action
 
 
 //Modules
 //modularity is writting the code in diferrent files
 //each file is called a module
+
+// //Default Parameters
+
+// window.onload = function () {
+
+//     // function log(num = 10) {
+//     //     console.log(num)
+//     // }
+//     // log()
+
+//     function log(name = 'none', belt = 'gone', age = 'not here') {
+//         console.log('My name is ' + name + ' and my belt is ' + belt + ' and my age is ' + age)
+//     }
+//     log()
+// }
+
+// //Spread operator
+
+// window.onload = function () {
+//     let meats = ['salami', 'bacon', 'beef']
+//     console.log(...meats)
+// }

@@ -12,6 +12,7 @@ console.log(user)
 printUserName(user)
 printAge(user)
 
+
 //let const var
 // defined redified reinialized
 
@@ -49,3 +50,17 @@ printAge(user)
 
 // combined(`Brian`)
 // // es6  the netninja
+
+
+// ==============================
+// ==============================
+// this basics
+// this advanced
+// factory functions
+// constructor functions
+// prototype property
+// property lookup
+// calls
+// binds
+// =============================
+// ==============================
