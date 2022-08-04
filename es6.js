@@ -196,3 +196,12 @@
 //     let meats = ['salami', 'bacon', 'beef']
 //     console.log(...meats)
 // }
+
+
+//Sets es6
+
+window.onload = function () {
+    var names = new Set() //sets eliminate duplicates
+    names.add('shawn').add('Daisy').add('Crystal')
+    console.log(names)
+}
