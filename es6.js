@@ -198,20 +198,31 @@
 // }
 
 
-//Sets es6
+// //Sets es6
+
+// window.onload = function () {
+//     var names = new Set() //sets eliminate duplicates
+//     names.add('shawn').add('Daisy').add('Crystal').add('Crystal')
+//     //we cant put .delete twice
+//     names.clear //removes everything in the set
+
+//     //to check we use the .has
+//     console.log(names.has('shawn'))
+
+//     console.log(names.delete('shawn'))
+//     console.log(names.size)
+//     console.log(names)
+// }
+
+//Generators
 
 window.onload = function () {
-    var names = new Set() //sets eliminate duplicates
-    names.add('shawn').add('Daisy').add('Crystal').add('Crystal')
-    //we cant put .delete twice
-    names.clear //removes everything in the set
-
-    //to check we use the .has
-    console.log(names.has('shawn'))
-
-    console.log(names.delete('shawn'))
-    console.log(names.size)
-    console.log(names)
-
-
+    function* cows() {       /// the * makes this a generator
+        console.log('pear')
+        yield console.log('banana') //My pause here
+        console.log('apple')
+    }
+    let myGen = cows()
+    myGen.next() //This here is my play button
+    myGen.next()//fisrt it workd then pause then this plays
 }
