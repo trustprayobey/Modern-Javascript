@@ -202,6 +202,16 @@
 
 window.onload = function () {
     var names = new Set() //sets eliminate duplicates
-    names.add('shawn').add('Daisy').add('Crystal')
+    names.add('shawn').add('Daisy').add('Crystal').add('Crystal')
+    //we cant put .delete twice
+    names.clear //removes everything in the set
+
+    //to check we use the .has
+    console.log(names.has('shawn'))
+
+    console.log(names.delete('shawn'))
+    console.log(names.size)
     console.log(names)
+
+
 }
